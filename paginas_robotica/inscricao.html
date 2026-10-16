@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição | RoboTics</title> 
+  </head>
+
+  <body>
+    <header>
+      <h1>Inscrição no RoboTics</h1>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="oficina.html">Oficina</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Formulário de inscrição</h2>
+
+        <p>Preenche o formulário para escolheres a oficina em que gostarias de participar.</p>
+
+        <form action="inscricao.html" method="get">
+          <p>
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome" required>
+          </p>
+
+          <p>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+
+          <p>
+            <label for="oficina">Escolhe uma sessão *</label>
+            <select id="oficina" name="oficina" required>
+              <option value="">Seleciona uma sessão</option>
+              <option value="paginas-web">Sessão 1 - Construção de Robôs</option>
+              <option value="robotica">Sessão 2 - Competição de Robôs</option>
+              <option value="jogos">Ambas</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="mensagem">Mensagem (opcional)</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+          </p>
+
+          <button type="submit">Testar inscrição</button>
+        </form>
+
+        <p>Este formulário é apenas um protótipo. Não são registadas inscrições reais.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>RoboTics · Projeto escolar de CPW</p>
+    </footer>
+  </body>
+</html>
