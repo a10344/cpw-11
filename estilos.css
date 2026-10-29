@@ -1,6 +1,4 @@
 
-/* Identidade visual do Game Sense */
-
 body {
     background-color: #121826;
     color: #E5E7EB;
@@ -70,11 +68,28 @@ footer {
     color: #CBD5E1;
 }
 
+.cartoes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
 .cartao {
     background-color: #1E293B;
     padding: 20px;
     border: 2px solid #38BDF8;
     margin-bottom: 20px;
     border-radius: 10px;
+    flex: 1 1 250px;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
+.cartao h3 {
+    margin-top: 0;
+}
+
+.cartao p {
+    overflow-wrap: anywhere;
+}
