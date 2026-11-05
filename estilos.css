@@ -1,4 +1,10 @@
 
+/* Estilo geral */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #121826;
     color: #E5E7EB;
@@ -17,7 +23,7 @@ header {
 }
 
 h1, h2, h3 {
-    color:#38BDF8;
+    color: #38BDF8;
 }
 
 nav {
@@ -68,6 +74,8 @@ footer {
     color: #CBD5E1;
 }
 
+/* Cartões das atividades */
+
 .cartoes {
     display: flex;
     gap: 20px;
@@ -94,14 +102,7 @@ footer {
     overflow-wrap: anywhere;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 24px;
-}
+/* A4 - 01: Sessão com Flexbox */
 
 .sessao-info, .sessao-material {
     padding: 16px;
@@ -126,4 +127,33 @@ body {
     flex: 1 1 200px;
     min-width: 0;
     overflow-wrap: anywhere;
+}
+
+/* A4 - 02: Agenda com Flexbox */
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 360px;
+    padding: 16px;
+    gap: 12px;
+}
+
+.momento {
+    background-color: #000000;
+    border: 1px solid rgb(70, 162, 255);
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+.momento h3 {
+    margin-top: 0;
+}
+
+.momento p {
+    margin-bottom: 0;
 }
