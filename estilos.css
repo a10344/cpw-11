@@ -93,3 +93,37 @@ footer {
 .cartao p {
     overflow-wrap: anywhere;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 24px;
+}
+
+.sessao-info, .sessao-material {
+    padding: 16px;
+    border: 1px solid rgb(70, 162, 255);
+    background: #000000;
+}
+
+.sessao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+.sessao-info {
+    flex: 2 1 200px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.sessao-material {
+    flex: 1 1 200px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
